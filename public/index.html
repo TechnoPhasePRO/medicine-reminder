@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Medicine Reminder</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Medicine Reminder</h1>
+    <form id="medicine-form">
+      <label for="medicine-name">Medicine Name:</label>
+      <input type="text" id="medicine-name" required>
+      
+      <label for="repetitiveness">Repetitiveness:</label>
+      <select id="repetitiveness" required>
+        <option value="Daily">Daily</option>
+        <option value="Weekly">Weekly</option>
+        <option value="Monthly">Monthly</option>
+      </select>
+      
+      <label for="repetition-count">Repetition Count:</label>
+      <input type="number" id="repetition-count" required>
+
+      <button type="submit">Add Medicine</button>
+    </form>
+
+    <div id="medicine-list">
+      <h2>Medicine List:</h2>
+      <ul id="medicines"></ul>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
